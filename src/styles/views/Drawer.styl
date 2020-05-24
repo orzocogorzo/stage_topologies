@@ -1,0 +1,141 @@
+[ready="false"] #drawer
+    display: none
+
+#drawer
+    display: flex
+    flex-direction: column
+    margin-bottom: 100px
+
+    .drawer-wrapper
+        flex: 1
+        width: 100%
+        display: flex
+        flex-direction: column
+
+    .drawer-header
+        height: 50px
+        width: 100%
+        background-color: #c5c5c5
+
+    .drawer-header__wrapper
+        display: flex
+        height: 50px
+
+    .drawer-header__backward
+        flex: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 5px 0px 5px 20px
+
+        button
+            cursor: pointer
+            width: 35px
+            height: 35px
+
+    .drawer-header__selector
+        flex: 1
+        display: flex
+        justify-content: center
+        align-items: center
+
+        select
+            cursor: pointer
+            width: 80%
+            height: 30px
+
+        option
+            font-weight: bold
+
+    .drawer-header__additor
+        flex: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+
+        &.open-form .drawer-header__additor-form
+            display: block
+
+        button
+            cursor: pointer
+            width: 80%
+            height: 30px
+
+    .drawer-header__additor-form
+        display: none
+
+    .drawer-header__additor-background
+        width: 100vw
+        height: 100vh
+        top: 0px
+        right: 0px
+        position: fixed
+        background-color: #00000088
+        z-index: 10
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .drawer-header__additor-wrapper
+        background-color: white
+        width: 400px
+        flex-direction: column
+    
+    .drawer-header__input-wrapper
+        display: block
+        padding: 0px 10%
+        height: 100px
+
+        label
+            line-height: 50px
+            display: block
+
+        input 
+            width: 100%
+            height: 30px
+
+    .drawer-header__download
+        flex: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+
+        button
+            width: 30%
+            margin: 0 5%
+            height: 30px
+            position: relative
+            cursor: pointer
+
+            &:after
+                position: absolute
+                left: 0px
+                top: 0px
+                bottom: 0px
+                right: 0px
+                margin: auto
+                width: 25px
+                height: 25px
+                background-position: center
+                background-size: contain
+                background-repeat: no-repeat
+                content: ""
+
+        #downloadButton:after
+            transform: rotate(180deg)
+            background-image: url(statics/images/download-icon.png)
+
+        #uploadButton:after
+            background-image: url(statics/images/download-icon.png)
+
+    .drawer-content
+        flex: 1
+        background-color: white
+        display: flex
+        align-items: center
+        padding: 0px 25px
+
+    #drawerCanvas
+        cursor: crosshair

@@ -1,0 +1,11 @@
+# npm environment
+node_modules
+yarn-error.log
+yarn.lock
+
+# folders
+dist/*
+src/assets/data/*
+src/assets/images/*
+src/assets/fonts/*
+.devlite
