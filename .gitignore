@@ -9,3 +9,4 @@ src/assets/data/*
 src/assets/images/*
 src/assets/fonts/*
 .devlite
+.venv
